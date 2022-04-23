@@ -369,6 +369,13 @@ Tab:AddButton({
 		end)
   	end    
 })
+Tab:AddButton({
+	Name = "FOV Changer (120)",
+	Callback = function()
+      		local FOV = 120
+game.Workspace.Camera.FieldOfView = FOV
+  	end    
+})
 --settings tab
 local Tab = Window:MakeTab({
 	Name = "Settings",
